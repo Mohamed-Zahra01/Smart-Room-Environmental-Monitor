@@ -41,7 +41,7 @@ void loop() {
     digitalWrite(led2, LOW);
     ledCount = 0;
   } 
-  else if (lightValue > 28) {
+  else if (lightValue > 33) {
     lightStatus = "NORMAL LIGHT";
     digitalWrite(led1, HIGH);
     digitalWrite(led2, LOW);
