@@ -41,7 +41,7 @@ void loop() {
     digitalWrite(led2, LOW);
     ledCount = 0;
   } 
-  else if (lightValue > 19) {
+  else if (lightValue > 22) {
     lightStatus = "NORMAL LIGHT";
     digitalWrite(led1, HIGH);
     digitalWrite(led2, LOW);
@@ -60,11 +60,11 @@ void loop() {
   if (smoothTemp <= 10) {
     fanSpeed = 0;
   } 
-  else if (smoothTemp >= 20) {
+  else if (smoothTemp >= 28) {
     fanSpeed = 255;
   } 
   else {
-    fanSpeed = map((int)smoothTemp, 10, 20, 80, 255);
+    fanSpeed = map((int)smoothTemp, 10, 28, 80, 255);
   }
 
   analogWrite(fanPin, fanSpeed);
@@ -77,7 +77,7 @@ void loop() {
   if (smoothTemp < 12) {
     tempStatus = "COLD";
   } 
-  else if (smoothTemp < 26) {
+  else if (smoothTemp < 28) {
     tempStatus = "WARM";
   } 
   else {
