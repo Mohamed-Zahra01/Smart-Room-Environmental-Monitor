@@ -35,7 +35,7 @@ void loop() {
   String lightStatus;
   int ledCount = 0;
 
-  if (lightValue > 90) {
+  if (lightValue > 110) {
     lightStatus = "BRIGHT";
     digitalWrite(led1, LOW);
     digitalWrite(led2, LOW);
@@ -77,7 +77,7 @@ void loop() {
   if (smoothTemp < 12) {
     tempStatus = "COLD";
   } 
-  else if (smoothTemp < 24) {
+  else if (smoothTemp < 26) {
     tempStatus = "WARM";
   } 
   else {
