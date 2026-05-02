@@ -35,7 +35,7 @@ void loop() {
   String lightStatus;
   int ledCount = 0;
 
-  if (lightValue > 110) {
+  if (lightValue > 130) {
     lightStatus = "BRIGHT";
     digitalWrite(led1, LOW);
     digitalWrite(led2, LOW);
